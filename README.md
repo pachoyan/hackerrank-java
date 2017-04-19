@@ -1,1 +1,3 @@
-# hackerrank-java
+
+## Hacker Rank - Java Problems
+Pau Chorro
