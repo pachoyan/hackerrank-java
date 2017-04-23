@@ -3,13 +3,21 @@
 package strings;
 
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class JavaAnagrams {
 
     private static boolean isAnagram(String a, String b) {
-        //TODO
-        return true;
+        String aSorted = getStringSorted(a);
+        String bSorted =  getStringSorted(b);
+        return aSorted.equals(bSorted);
+    }
+
+    private static String getStringSorted(String a) {
+        char[] chars = a.toLowerCase().toCharArray();
+        Arrays.sort(chars);
+        return new String(chars);
     }
 
     public static void main(String[] args) {
